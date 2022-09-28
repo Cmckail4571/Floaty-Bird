@@ -1,0 +1,116 @@
+/* Created by Callum Mckail */
+/* Created on 03-26-2022 */
+/* Description: CSS style sheet for Flappy Bird SVG game. Configures the based styles and animatoins for game elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FE9800;
+}
+
+main{
+    background-color: darkgrey;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#settings{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#instructions{
+    font-size: medium;
+}
+
+#selectedButton{
+    background-color: #FE9800;
+}
+
+#gameWindow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+}
+
+#sky{
+    fill: #71C5CF;
+}
+
+#grass{
+    fill: #71BF2E;
+}
+
+#hill{
+    fill: #599425;
+}
+
+#pipe{
+    fill: #654E56;
+}
+
+#hole{
+    fill: #71C5CF;
+    opacity: 0;
+}
+
+#bird{
+    fill: #fff12a;
+}
+
+#score{
+    fill:white;
+    stroke: black;
+}
+
+#gameOver{
+    user-select: none;
+    fill: red;
+    stroke: red;
+}
+
+#start{
+    fill: #FE9800;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 50%;
+    }
+    50%{
+        opacity: 40%;
+    }
+    75%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+#startText{
+    user-select: none;
+    fill: black;
+}
+
+
+
+
+footer{
+    background-color: darkgrey;
+}
